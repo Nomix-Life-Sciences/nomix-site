@@ -7,14 +7,16 @@ export default class WhoWeAre extends Component {
     return (
       <Flex
         className="homeSection whoweare"
-        justifyContent="center"
         alignItems="center"
         flexWrap="wrap"
       >
         <Box width={[1, 1 / 3]} px={2}>
           <div class="card">
             <div class="card-body">
-              <img src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg" />
+              <img
+                className="placeholderImg"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
               <h5 class="card-title">Our Mission</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
@@ -26,7 +28,10 @@ export default class WhoWeAre extends Component {
         <Box width={[1, 1 / 3]} px={2}>
           <div class="card">
             <div class="card-body">
-              <img src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg" />
+              <img
+                className="placeholderImg"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
 
               <h5 class="card-title">Our Story</h5>
               <p class="card-text">
@@ -39,7 +44,10 @@ export default class WhoWeAre extends Component {
         <Box width={[1, 1 / 3]} px={2}>
           <div class="card">
             <div class="card-body">
-              <img src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg" />
+              <img
+                className="placeholderImg"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
 
               <h5 class="card-title">Our Technology</h5>
               <p class="card-text">

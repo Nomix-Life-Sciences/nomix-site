@@ -4,8 +4,6 @@ import Button from "react-bootstrap/Button";
 import { Flex, Box } from "@rebass/grid/emotion";
 import WhoWeAre from "./components/SectionComponents/WhoWeAre";
 import HowItWorks from "./components/SectionComponents/HowItWorks";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
 import Header from "./components/Header/Header";
@@ -19,19 +17,23 @@ function App() {
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box>
           <h1>Find the clinical trial that works for you</h1>
-          <Button>Learn More</Button>
+          <Button className="heroCTA">Learn More</Button>
         </Box>
       </Flex>
 
-      <div className="container sectionHeight">
-        <h1 className="sectionHeader">Who we are</h1>
-        <WhoWeAre />
-      </div>
+      <Flex className="container homeSection" justifyContent="center" alignItems="center">
+        <Box>
+          <h1 className="sectionHeader">Who we are</h1>
+          <WhoWeAre />
+        </Box>
+      </Flex>
 
-      <div className="container sectionHeight">
-        <h1 className="sectionHeader">How it works</h1>
-        <HowItWorks />
-      </div>
+      <Flex className="container homeSection" justifyContent="center" alignItems="center">
+        <Box>
+          <h1 className="sectionHeader">How it works</h1>
+          <HowItWorks />
+        </Box>
+      </Flex>
 
       <div className="orderKit">
         <Button className="orderKit">Order Kit</Button>
