@@ -2,7 +2,6 @@
 }
 
 .whoweare {
-
 }
 
 .homeSection {
@@ -12,9 +11,10 @@
 }
 
 .heroCTA {
-    background-color: gray !important;
-    border: none !important;
+  background-color: gray !important;
+  border: none !important;
 }
 
 .card {
-    box-shadow: 10px 5px 5px gray;}
+  box-shadow: 10px 5px 5px gray;
+}

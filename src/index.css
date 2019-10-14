@@ -14,5 +14,14 @@
 
 .orderKit {
   text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
+
+.orderKit button {
+  background-color: gray !important;
+  border: none !important;
+}
+
+
 
