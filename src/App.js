@@ -21,14 +21,22 @@ function App() {
         </Box>
       </Flex>
 
-      <Flex className="container homeSection" justifyContent="center" alignItems="center">
+      <Flex
+        className="container homeSection"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Box>
           <h1 className="sectionHeader">Who we are</h1>
           <WhoWeAre />
         </Box>
       </Flex>
 
-      <Flex className="container homeSection" justifyContent="center" alignItems="center">
+      <Flex
+        className="container homeSection"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Box>
           <h1 className="sectionHeader">How it works</h1>
           <HowItWorks />
