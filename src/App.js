@@ -1,10 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import Button from "react-bootstrap/Button";
 import { Flex, Box } from "@rebass/grid/emotion";
 import WhoWeAre from "./components/SectionComponents/WhoWeAre";
 import HowItWorks from "./components/SectionComponents/HowItWorks";
-import Container from "react-bootstrap/Container";
 
 import Header from "./components/Header/Header";
 

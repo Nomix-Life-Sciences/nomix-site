@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
 import { Flex, Box } from "@rebass/grid/emotion";
 
 export default class WhoWeAre extends Component {

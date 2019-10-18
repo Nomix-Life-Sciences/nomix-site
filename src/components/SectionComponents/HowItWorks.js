@@ -15,7 +15,10 @@ export default class HowItWorks extends Component {
         <Box width={[1, 1 / 2]} px={2}>
           <div class="card">
             <div class="card-body">
-              <img className="howImage" src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg" />
+              <img
+                className="howImage"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
               <h5 class="card-title">Blood Collection Kit</h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,7 +35,10 @@ export default class HowItWorks extends Component {
         <Box width={[1, 1 / 2]} px={2}>
           <div class="card">
             <div class="card-body">
-            <img className="howImage" src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg" />
+              <img
+                className="howImage"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
 
               <h5 class="card-title">Patient-to-trial matching</h5>
               <p class="card-text">
