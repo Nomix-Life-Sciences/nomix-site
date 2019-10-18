@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import { Flex, Box } from "@rebass/grid/emotion";
 
-import "./index.css";
+import "./index.scss";
 
 export default class HowItWorks extends Component {
   render() {
