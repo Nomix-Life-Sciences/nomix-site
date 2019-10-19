@@ -1,18 +1,34 @@
+@import "../../colors.scss";
+
 .homeSection {
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-.heroCTA {
-  background-color: gray !important;
-  border: none !important;
-}
-
-.card {
-  box-shadow: 10px 5px 5px gray;
+.wwa-text {
+  text-align: left;
+  color: $light-text;
 }
 
 .howImage {
-  width: 350px;
+  max-width: 75%;
+}
+
+.wwa-card {
+  border: none !important;
+  background: none !important;
+}
+
+.hiw-card {
+  border: none !important;
+  background: none !important;
+}
+
+.wwa-background {
+  background-color: $navy-blue;
+}
+
+.wwa-header {
+  color: $orange;
 }

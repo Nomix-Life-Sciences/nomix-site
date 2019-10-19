@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import "../Header/header.css";
+import "../Header/header.scss";
 
 export default class Header extends Component {
   render() {
@@ -12,13 +12,14 @@ export default class Header extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
+
+            <Nav.Link className="main-nav-link" eventKey={2} href="#">
+              About us
+            </Nav.Link>
+            <Nav.Link className="main-nav-link" href="#">Sign-in</Nav.Link>
             <Nav.Link className="nav-order-button" href="#">
               Order Kit
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#">
-              Sign-in
-            </Nav.Link>
-            <Nav.Link href="#">FAQ</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

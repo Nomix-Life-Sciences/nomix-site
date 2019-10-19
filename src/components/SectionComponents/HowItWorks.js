@@ -12,44 +12,51 @@ export default class HowItWorks extends Component {
         alignItems="center"
         flexWrap="wrap"
       >
-        <Box width={[1, 1 / 2]} px={2}>
-          <div class="card">
+        <Box width={[1, 1 / 4]} px={2}>
+          <div className="hiw-card card">
             <div class="card-body">
               <img
+                alt=""
                 className="howImage"
                 src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
               />
-              <h5 class="card-title">Blood Collection Kit</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <h5 class="step-title">Step 1</h5>
             </div>
           </div>
         </Box>
-        <Box width={[1, 1 / 2]} px={2}>
-          <div class="card">
+        <Box width={[1, 1 / 4]} px={2}>
+          <div className="hiw-card card">
             <div class="card-body">
               <img
+                alt=""
                 className="howImage"
                 src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
               />
-
-              <h5 class="card-title">Patient-to-trial matching</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <h5 class="step-title">Step 2</h5>
+            </div>
+          </div>
+        </Box>
+        <Box width={[1, 1 / 4]} px={2}>
+          <div className="hiw-card card">
+            <div class="card-body">
+              <img
+                alt=""
+                className="howImage"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
+              <h5 class="step-title">Step 3</h5>
+            </div>
+          </div>
+        </Box>
+        <Box width={[1, 1 / 4]} px={2}>
+          <div className="hiw-card card">
+            <div class="card-body">
+              <img
+                alt=""
+                className="howImage"
+                src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
+              />
+              <h5 class="step-title">Step 4</h5>
             </div>
           </div>
         </Box>

@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+@font-face {
+	font-family: "Proxima";
+	src: 
+		 url("./fonts/proxima_ssv/ProximaNova-Regular.otf") format("opentype")
+}
+
+
+* {
+  font-family: Proxima;
+}
+
+.hero {
+  height: 70vh;
+  background-color: $navy-blue;
+  text-align: center;
+  color: $light-text;
+}
+
+.heroCTA {
+  background-color: $light-blue !important;
+  border: none !important;
+  font-size: 24px !important;
+}
+
+.mainCTA button {
+  width: 25%;
+}
+
+.placeholderImg {
+  width: 150px;
+}
+
+.sectionHeader {
+  text-align: left;
+}
+
+.orderKit {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.orderKit button {
+  background-color: $orange !important;
+  border: none !important;
+  font-size: 32px;
+  width: 25%;
+  border-radius: 15px;
+}
+
+.partnerImage {
+  max-width: 50%;
+}

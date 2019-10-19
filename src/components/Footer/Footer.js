@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Flex, Box } from "@rebass/grid/emotion";
-import "../Footer/footer.css";
+import "../Footer/footer.scss";
 
 export default class Footer extends Component {
   render() {
