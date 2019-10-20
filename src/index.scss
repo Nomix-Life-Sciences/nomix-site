@@ -1,11 +1,9 @@
 @import "./colors.scss";
 
 @font-face {
-	font-family: "Proxima";
-	src: 
-		 url("./fonts/proxima_ssv/ProximaNova-Regular.otf") format("opentype")
+  font-family: "Proxima";
+  src: url("./fonts/proxima_ssv/ProximaNova-Regular.otf") format("opentype");
 }
-
 
 * {
   font-family: Proxima;
@@ -25,7 +23,13 @@
 }
 
 .mainCTA button {
-  width: 25%;
+  width: 50%;
+}
+
+@media (min-width: 992px) { 
+  .mainCTA button {
+    width: 25%;
+  }
 }
 
 .placeholderImg {
@@ -45,9 +49,19 @@
   background-color: $orange !important;
   border: none !important;
   font-size: 32px;
-  width: 25%;
+  width: 50%;
   border-radius: 15px;
 }
+
+@media (min-width: 992px) { 
+  .orderKit button {
+    background-color: $orange !important;
+    border: none !important;
+    font-size: 32px;
+    width: 25%;
+    border-radius: 15px;
+  }
+ }
 
 .partnerImage {
   max-width: 50%;
