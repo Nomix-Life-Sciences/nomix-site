@@ -12,7 +12,7 @@ export default class HowItWorks extends Component {
         alignItems="center"
         flexWrap="wrap"
       >
-        <Box width={[1, 1 / 4]} px={2}>
+        <Box width={[1, 1 / 2]} px={2}>
           <div className="hiw-card card">
             <div class="card-body">
               <img
@@ -20,11 +20,11 @@ export default class HowItWorks extends Component {
                 className="howImage"
                 src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
               />
-              <h5 class="step-title">Step 1</h5>
+              <h3 class="step-title">You order the kit.</h3>
             </div>
           </div>
         </Box>
-        <Box width={[1, 1 / 4]} px={2}>
+        <Box width={[1, 1 / 2]} px={2}>
           <div className="hiw-card card">
             <div class="card-body">
               <img
@@ -32,11 +32,11 @@ export default class HowItWorks extends Component {
                 className="howImage"
                 src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
               />
-              <h5 class="step-title">Step 2</h5>
+              <h3 class="step-title">You collect your sample.</h3>
             </div>
           </div>
         </Box>
-        <Box width={[1, 1 / 4]} px={2}>
+        <Box width={[1, 1 / 2]} px={2}>
           <div className="hiw-card card">
             <div class="card-body">
               <img
@@ -44,11 +44,11 @@ export default class HowItWorks extends Component {
                 className="howImage"
                 src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
               />
-              <h5 class="step-title">Step 3</h5>
+              <h3 class="step-title">We analyze it and match you.</h3>
             </div>
           </div>
         </Box>
-        <Box width={[1, 1 / 4]} px={2}>
+        <Box width={[1, 1 / 2]} px={2}>
           <div className="hiw-card card">
             <div class="card-body">
               <img
@@ -56,7 +56,7 @@ export default class HowItWorks extends Component {
                 className="howImage"
                 src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
               />
-              <h5 class="step-title">Step 4</h5>
+              <h3 class="step-title">You enroll.</h3>
             </div>
           </div>
         </Box>

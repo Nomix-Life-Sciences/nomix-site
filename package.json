@@ -12,7 +12,8 @@
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
     "rebass": "^4.0.6",
-    "sass": "^1.23.0"
+    "sass": "^1.23.0",
+    "takeshape-cli": "^4.97.0"
   },
   "scripts": {
     "start": "react-scripts start",
