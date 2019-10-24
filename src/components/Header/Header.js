@@ -16,11 +16,8 @@ export default class Header extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
             <Nav>
-              <Nav.Link className="main-nav-link" eventKey={2} href="#">
-                About us
-              </Nav.Link>
-              <Nav.Link className="main-nav-link" href="#">
-                Sign-in
+              <Nav.Link className="main-nav-link hovernav" href="#">
+                <span>Sign-in</span>
               </Nav.Link>
               <Nav.Link className="nav-order-button" href="#">
                 Order Kit

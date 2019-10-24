@@ -27,7 +27,9 @@ function App() {
         alignItems="center"
       >
         <Box>
-          <h1 className="sectionHeader">How it works</h1>
+          <h1 className="sectionHeader">
+            <span>How it works</span>
+          </h1>
           <HowItWorks />
         </Box>
       </Flex>
@@ -44,9 +46,16 @@ function App() {
         </Flex>
       </div>
 
-
       <div className="orderKit">
-        <Button className="orderKit">Order Kit</Button>
+        <Flex className="container" justifyContent="center" alignItems="center">
+          <Box>
+            <p className="orderText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+            <Button className="orderKit">Order Kit</Button>
+          </Box>
+        </Flex>
       </div>
       <Partners />
 

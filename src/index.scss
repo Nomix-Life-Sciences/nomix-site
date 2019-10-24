@@ -27,7 +27,7 @@
   width: 50%;
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .mainCTA button {
     width: 25%;
   }
@@ -38,7 +38,12 @@
 }
 
 .sectionHeader {
-  text-align: left;
+  text-align: center;
+}
+
+.sectionHeader span {
+  border-bottom: solid 5px $orange;
+  font-weight: bold;
 }
 
 .orderKit {
@@ -54,7 +59,7 @@
   border-radius: 15px;
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .orderKit button {
     background-color: $orange !important;
     border: none !important;
@@ -62,8 +67,13 @@
     width: 25%;
     border-radius: 15px;
   }
- }
+}
 
 .partnerImage {
   max-width: 50%;
+}
+
+
+.orderText {
+  font-size: 25px;
 }
