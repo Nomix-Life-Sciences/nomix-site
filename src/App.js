@@ -3,11 +3,14 @@ import Button from "react-bootstrap/Button";
 import { Flex, Box } from "@rebass/grid/emotion";
 import WhoWeAre from "./components/SectionComponents/WhoWeAre";
 import HowItWorks from "./components/SectionComponents/HowItWorks";
+
 import Partners from "./components/Partners/Partners";
 
 import Header from "./components/Header/Header";
 
 import Footer from "./components/Footer/Footer";
+
+
 
 function App() {
   return (
@@ -33,7 +36,6 @@ function App() {
           <HowItWorks />
         </Box>
       </Flex>
-
       <div className="wwa-background">
         <Flex
           className="container homeSection"
@@ -45,7 +47,6 @@ function App() {
           </Box>
         </Flex>
       </div>
-
       <div className="orderKit">
         <Flex className="container" justifyContent="center" alignItems="center">
           <Box>
@@ -58,7 +59,6 @@ function App() {
         </Flex>
       </div>
       <Partners />
-
       <Footer />
     </>
   );
