@@ -42,6 +42,28 @@ const wwaQuery = gql`
   }
 `;
 
+const partners = gql`
+  {
+    getPartnerLogos {
+      _id
+      repeater {
+        logo {
+          _id
+          caption
+          credit
+          description
+          filename
+          mimeType
+          path
+          sourceUrl
+          title
+          uploadStatus
+        }
+      }
+    }
+  }
+`;
+
 function App() {
   return (
     <>
@@ -79,13 +101,14 @@ function App() {
           alignItems="center"
         >
           <Box>
-          <Query query={wwaQuery}>
-            {({ loading, error, data }) => {
-              if (loading) return "";
-              if (error) return `Error! ${error.message}`;
-              return <WhoWeAre items={data.getWhoWeAre.repeater} />;
-            }}
-          </Query>          </Box>
+            <Query query={wwaQuery}>
+              {({ loading, error, data }) => {
+                if (loading) return "";
+                if (error) return `Error! ${error.message}`;
+                return <WhoWeAre items={data.getWhoWeAre.repeater} />;
+              }}
+            </Query>{" "}
+          </Box>
         </Flex>
       </div>
       <div className="orderKit">
@@ -99,7 +122,13 @@ function App() {
           </Box>
         </Flex>
       </div>
-      <Partners />
+      <Query query={partners}>
+        {({ loading, error, data }) => {
+          if (loading) return "";
+          if (error) return `Error! ${error.message}`;
+          return <Partners items={data.getPartnerLogos.repeater} />;
+        }}
+      </Query>{" "}
       <Footer />
     </>
   );

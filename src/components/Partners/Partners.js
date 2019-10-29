@@ -1,41 +1,23 @@
 import React from "react";
 import { Flex, Box } from "@rebass/grid/emotion";
+import { getImageUrl } from "takeshape-routing";
 
-const Partners = () => {
+const Partners = ({ items }) => {
   return (
     <Flex
       className="homeSection howitworks"
       alignItems="center"
       flexWrap="wrap"
     >
-      <Box width={[1, 1 / 4]} px={2}>
-        <img
-          alt=""
-          className="partnerImage"
-          src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
-        />
-      </Box>
-      <Box width={[1, 1 / 4]} px={2}>
-        <img
-          alt=""
-          className="partnerImage"
-          src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
-        />
-      </Box>
-      <Box width={[1, 1 / 4]} px={2}>
-        <img
-          alt=""
-          className="partnerImage"
-          src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
-        />
-      </Box>
-      <Box width={[1, 1 / 4]} px={2}>
-        <img
-          alt=""
-          className="partnerImage"
-          src="https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg"
-        />
-      </Box>
+      {items.map(step => (
+        <Box width={[1, 1 / 4]} px={2}>
+          <img
+            alt=""
+            className="partnerImage"
+            src={getImageUrl(step.logo.path)}
+          />
+        </Box>
+      ))}
     </Flex>
   );
 };

@@ -1,32 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { Flex, Box } from "@rebass/grid/emotion";
 import { getImageUrl } from "takeshape-routing";
-
-import gql from "graphql-tag";
-import { Query } from "react-apollo";
-
-const wwaQuery = gql`
-  {
-    getWhoWeAre {
-      repeater {
-        image {
-          _id
-          caption
-          credit
-          description
-          filename
-          mimeType
-          path
-          sourceUrl
-          title
-          uploadStatus
-        }
-        description
-        title
-      }
-    }
-  }
-`;
 
 const WhoWeAre = ({ items }) => {
   return (

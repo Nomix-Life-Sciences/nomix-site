@@ -1,35 +1,8 @@
-import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
+import React from "react";
 import { Flex, Box } from "@rebass/grid/emotion";
-import ApolloClient from "apollo-boost";
 import { getImageUrl } from "takeshape-routing";
 
 import "./index.scss";
-
-import gql from "graphql-tag";
-import { Query } from "react-apollo";
-
-const howItWorksQuery = gql`
-  {
-    getHowItWorks {
-      repeater {
-        image {
-          _id
-          caption
-          credit
-          description
-          filename
-          mimeType
-          path
-          sourceUrl
-          title
-          uploadStatus
-        }
-        title
-      }
-    }
-  }
-`;
 
 const HowItWorks = ({ items }) => {
   return (
