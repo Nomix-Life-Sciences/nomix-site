@@ -10,7 +10,37 @@ import Header from "./components/Header/Header";
 
 import Footer from "./components/Footer/Footer";
 
+import gql from "graphql-tag";
+import { Query } from "react-apollo";
 
+const howItWorksQuery = gql`
+  {
+    getHowItWorks {
+      repeater {
+        image {
+          _id
+          path
+        }
+        title
+      }
+    }
+  }
+`;
+
+const wwaQuery = gql`
+  {
+    getWhoWeAre {
+      repeater {
+        image {
+          _id
+          path
+        }
+        description
+        title
+      }
+    }
+  }
+`;
 
 function App() {
   return (
@@ -33,7 +63,13 @@ function App() {
           <h1 className="sectionHeader">
             <span>How it works</span>
           </h1>
-          <HowItWorks />
+          <Query query={howItWorksQuery}>
+            {({ loading, error, data }) => {
+              if (loading) return "";
+              if (error) return `Error! ${error.message}`;
+              return <HowItWorks items={data.getHowItWorks.repeater} />;
+            }}
+          </Query>
         </Box>
       </Flex>
       <div className="wwa-background">
@@ -43,8 +79,13 @@ function App() {
           alignItems="center"
         >
           <Box>
-            <WhoWeAre />
-          </Box>
+          <Query query={wwaQuery}>
+            {({ loading, error, data }) => {
+              if (loading) return "";
+              if (error) return `Error! ${error.message}`;
+              return <WhoWeAre items={data.getWhoWeAre.repeater} />;
+            }}
+          </Query>          </Box>
         </Flex>
       </div>
       <div className="orderKit">

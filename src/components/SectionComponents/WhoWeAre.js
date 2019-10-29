@@ -28,42 +28,26 @@ const wwaQuery = gql`
   }
 `;
 
-export default class WhoWeAre extends Component {
-  render() {
-    return (
-      <Query query={wwaQuery}>
-      {({ loading, error, data }) => {
-        if (loading) return "";
-        if (error) return `Error! ${error.message}`;
-        return (
-          <Flex
-          className="homeSection whoweare"
-          alignItems="center"
-          flexWrap="wrap"
-        >
-          {data.getWhoWeAre.repeater.map(wwa => (
-          <Box width={[1, 1 / 3]} px={2}>
-            <div class="wwa-card card">
-              <div class="card-body">
-                <img
-                  alt=""
-                  className="placeholderImg"
-                  src={getImageUrl(wwa.image.path)}
-                />
-                <h5 class="card-title wwa-header">{wwa.title}</h5>
-                <p class="wwa-text ">
-                  {wwa.description}
-
-                </p>
-              </div>
+const WhoWeAre = ({ items }) => {
+  return (
+    <Flex className="homeSection whoweare" alignItems="center" flexWrap="wrap">
+      {items.map(wwa => (
+        <Box width={[1, 1 / 3]} px={2}>
+          <div class="wwa-card card">
+            <div class="card-body">
+              <img
+                alt=""
+                className="placeholderImg"
+                src={getImageUrl(wwa.image.path)}
+              />
+              <h5 class="card-title wwa-header">{wwa.title}</h5>
+              <p class="wwa-text ">{wwa.description}</p>
             </div>
-          </Box>
-                        ))}
+          </div>
+        </Box>
+      ))}
+    </Flex>
+  );
+};
 
-        </Flex>
-          );
-        }}      
-      </Query>
-    );
-  }
-}
+export default WhoWeAre;

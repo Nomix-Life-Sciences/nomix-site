@@ -31,38 +31,30 @@ const howItWorksQuery = gql`
   }
 `;
 
-export default class HowItWorks extends Component {
-  render() {
-    return (
-      <Query query={howItWorksQuery}>
-        {({ loading, error, data }) => {
-          if (loading) return "";
-          if (error) return `Error! ${error.message}`;
-          return (
-            <Flex
-              className="homeSection howitworks"
-              alignItems="center"
-              flexWrap="wrap"
-              frameBorder
-            >
-              {data.getHowItWorks.repeater.map(step => (
-                <Box width={[1, 1 / 2]} px={2}>
-                  <div className="hiw-card card">
-                    <div class="card-body">
-                      <img
-                        alt=""
-                        className="howImage"
-                        src={getImageUrl(step.image.path)}
-                      />
-                      <h3 class="step-title">{step.title}</h3>
-                    </div>
-                  </div>
-                </Box>
-              ))}
-            </Flex>
-          );
-        }}
-      </Query>
-    );
-  }
-}
+const HowItWorks = ({ items }) => {
+  return (
+    <Flex
+      className="homeSection howitworks"
+      alignItems="center"
+      flexWrap="wrap"
+      frameBorder
+    >
+      {items.map(step => (
+        <Box width={[1, 1 / 2]} px={2}>
+          <div className="hiw-card card">
+            <div class="card-body">
+              <img
+                alt=""
+                className="howImage"
+                src={getImageUrl(step.image.path)}
+              />
+              <h3 class="step-title">{step.title}</h3>
+            </div>
+          </div>
+        </Box>
+      ))}
+    </Flex>
+  );
+};
+
+export default HowItWorks;

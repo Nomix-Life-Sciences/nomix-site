@@ -16,10 +16,8 @@ export default class Footer extends Component {
             </Box>
             <Box width={1 / 2}>
               <ul>
-                <li>Text</li>
-                <li>Text</li>
-                <li>Text</li>
-                <li>Text</li>
+                <li>Contact</li>
+                <li>Copyright</li>
               </ul>
             </Box>
           </Flex>
