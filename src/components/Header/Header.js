@@ -8,14 +8,17 @@ export default class Header extends Component {
   render() {
     return (
       <Navbar collapseOnSelect bg="light" expand="lg" fixed="top">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img className="logo-image" alt="logo" src={Logo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
-            <Nav.Link className="main-nav-link hovernav" href="#">
+            <Nav.Link
+              className="main-nav-link hovernav"
+              href="https://match.nomixls.com/login"
+            >
               <span>Sign-in</span>
             </Nav.Link>
             <Nav.Link className="nav-order-button" href="#">
