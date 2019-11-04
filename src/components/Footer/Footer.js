@@ -11,15 +11,10 @@ export default class Footer extends Component {
         <div className="container footer">
           <Flex>
             <Box width={1 / 2}>
-              <h3>Nomix</h3>
-              <h3>Life Sciences</h3>
+              <h4>Nomix Life Sciences</h4>
+              <h4>Copyright 2019</h4>
             </Box>
-            <Box width={1 / 2}>
-              <ul>
-                <li>Contact</li>
-                <li>Copyright</li>
-              </ul>
-            </Box>
+            <Box width={1 / 2}></Box>
           </Flex>
         </div>
       </>

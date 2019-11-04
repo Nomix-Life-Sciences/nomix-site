@@ -71,9 +71,16 @@ function App() {
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box>
           <h1>Find the clinical trial that works for you</h1>
-          <div className="mainCTA">
-            <Button className="heroCTA">Learn More</Button>
-          </div>
+          <br />
+          <br />
+          <h3>
+            We’re here to help you and your doctor find the trial that works for
+            you.
+          </h3>
+          <h3>
+            Take our kit and answer a few short questions and we’ll search the
+            global network for the right trial for you.
+          </h3>
         </Box>
       </Flex>
       <Flex
@@ -115,8 +122,8 @@ function App() {
         <Flex className="container" justifyContent="center" alignItems="center">
           <Box>
             <p className="orderText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
+              Nomix makes finding the right trial easy. Start by ordering our
+              at-home collection kit and answering a few short questions.
             </p>
             <Button className="orderKit">Order Kit</Button>
           </Box>
