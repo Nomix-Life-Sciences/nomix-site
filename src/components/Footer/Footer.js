@@ -8,7 +8,7 @@ export default class Footer extends Component {
       <>
         <hr></hr>
 
-        <div className="container footer">
+        <footer className="container footer">
           <Flex>
             <Box width={1 / 2}>
               <h4>Nomix Life Sciences</h4>
@@ -16,7 +16,7 @@ export default class Footer extends Component {
             </Box>
             <Box width={1 / 2}></Box>
           </Flex>
-        </div>
+        </footer>
       </>
     );
   }

@@ -123,8 +123,11 @@ function App() {
           <Box>
             <p className="orderText">
               Nomix makes finding the right trial easy. Start by ordering our
-              at-home collection kit and answering a few short questions.
+              at-home collection kit <br /> and answering a few short questions.
             </p>
+
+            <br />
+            <br />
             <Button className="orderKit">Order Kit</Button>
           </Box>
         </Flex>
