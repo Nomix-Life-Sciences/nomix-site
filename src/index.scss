@@ -10,11 +10,15 @@
 }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
   background-color: $navy-blue;
   text-align: center;
   color: $light-text;
   margin-top: 10vh;
+}
+
+.hero-text {
+  width: 75%;
 }
 
 .heroCTA {

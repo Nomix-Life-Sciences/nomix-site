@@ -69,7 +69,7 @@ function App() {
     <>
       <Header />
       <Flex className="hero" justifyContent="center" alignItems="center">
-        <Box>
+        <Box className="hero-text">
           <h1>Find the clinical trial that works for you</h1>
           <br />
           <br />
