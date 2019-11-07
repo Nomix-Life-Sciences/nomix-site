@@ -10,6 +10,16 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="logo192.png" />
+    <script type="text/javascript">
+      /* Password Protection Script by https://prio-soft.blogspot.com*/
+      var password = "";
+      password = prompt("Please enter the password to enter this page:", "");
+      if (password == "nomix") {
+        location.href = "https://nomix-dev.netlify.com/";
+      } else {
+        location.href = "wrongpassword";
+      }
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
