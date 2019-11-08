@@ -10,7 +10,7 @@ const Partners = ({ items }) => {
       flexWrap="wrap"
     >
       {items.map(step => (
-        <Box width={[1, 1 / 4]} px={2}>
+        <Box width={[1, 1 / 2, 1 / 4]} px={2}>
           <img
             alt=""
             className="partnerImage"
