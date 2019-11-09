@@ -21,6 +21,10 @@
   width: 75%;
 }
 
+.main-header-text {
+  font-weight: 1200;
+}
+
 .heroCTA {
   background-color: $light-blue !important;
   border: none !important;
@@ -60,7 +64,7 @@
   border: none !important;
   font-size: 32px;
   width: 50%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 @media (min-width: 992px) {

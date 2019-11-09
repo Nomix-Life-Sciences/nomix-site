@@ -70,16 +70,11 @@ function App() {
       <Header />
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box className="hero-text">
-          <h1>Find the clinical trial that works for you</h1>
+          <h1 className="main-header-text">Find the clinical trial that works for you</h1>
           <br />
           <br />
           <h3>
-            We’re here to help you and your doctor find the trial that works for
-            you.
-          </h3>
-          <h3>
-            Take our kit and answer a few short questions and we’ll search the
-            global network for the right trial for you.
+          Were here to help you and doctor find the right clinical trial. Take our kit and answer a few short questions and we’ll search the global network for the right trial for you.
           </h3>
         </Box>
       </Flex>
