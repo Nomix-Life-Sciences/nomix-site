@@ -10,7 +10,7 @@
 }
 
 .hero {
-  height: 100vh;
+  height: 50vh;
   background-color: $navy-blue;
   text-align: center;
   color: $light-text;
@@ -19,6 +19,23 @@
 
 .hero-text {
   width: 75%;
+}
+
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 2rem !important;
+  }
+
+  .hero-text h3 {
+    font-size: 1rem;
+  }
+
+  .orderKit button {
+    background-color: $orange !important;
+    border: none !important;
+    width: 75% !important;
+    border-radius: 5px;
+  }
 }
 
 .main-header-text {

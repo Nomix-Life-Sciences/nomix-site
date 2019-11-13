@@ -11,8 +11,6 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 
 const cache = new InMemoryCache();
 
-
-
 const TAKESHAPE_BASE_URL =
   "https://api.takeshape.io/project/1571a551-c3a7-4818-83f2-777769cf4339/graphql";
 const httpLink = new HttpLink({
@@ -29,10 +27,6 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-
-    {
-      
-    }
     <App />
   </ApolloProvider>,
   document.getElementById("root")

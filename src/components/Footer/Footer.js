@@ -6,17 +6,18 @@ export default class Footer extends Component {
   render() {
     return (
       <>
-        <hr></hr>
-
-        <footer className="container footer">
-          <Flex>
-            <Box width={1 / 2}>
-              <h5>Nomix Life Sciences</h5>
-              <h5>Copyright 2019</h5>
-            </Box>
-            <Box width={1 / 2}></Box>
-          </Flex>
-        </footer>
+        <div className="footer">
+          <footer className="container">
+            <Flex>
+              <Box width={1 / 2}>
+                <span>Nomix Life Sciences</span>
+                <br />
+                <span>Copyright 2019</span>
+              </Box>
+              <Box width={1 / 2}></Box>
+            </Flex>
+          </footer>
+        </div>
       </>
     );
   }

@@ -70,11 +70,14 @@ function App() {
       <Header />
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box className="hero-text">
-          <h1 className="main-header-text">Find the clinical trial that works for you</h1>
-          <br />
-          <br />
+          <h1 className="main-header-text">
+            Find the clinical trial that works for you
+          </h1>
+
           <h3>
-          Were here to help you and doctor find the right clinical trial. Take our kit and answer a few short questions and we’ll search the global network for the right trial for you.
+            Were here to help you and doctor find the right clinical trial. Take
+            our kit and answer a few short questions and we’ll search the global
+            network for the right trial for you.
           </h3>
         </Box>
       </Flex>
@@ -123,7 +126,9 @@ function App() {
 
             <br />
             <br />
-            <Button className="orderKit">Order Kit</Button>
+            <Button className="orderKit hover-button">
+              <span>Order Kit</span>
+            </Button>
           </Box>
         </Flex>
       </div>
