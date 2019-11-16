@@ -7,7 +7,7 @@ export default class Footer extends Component {
     return (
       <>
         <div className="footer">
-          <footer className="container">
+          <footer className="container-fluid">
             <Flex>
               <Box width={1 / 2}>
                 <span>Nomix Life Sciences</span>

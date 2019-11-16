@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
 import "../Header/header.scss";
 import Logo from "../../images/nomix-logo-02.png";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Product from "../../Product";
 
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
@@ -43,7 +46,7 @@ const Header = () => {
             <span>Sign-in</span>
           </Nav.Link>
           <Nav.Link className="main-nav-link hovernav"></Nav.Link>
-          <Nav.Link className="nav-order-button hover-button" href="#">
+          <Nav.Link className="nav-order-button hover-button" href="/order">
             <span>Order Kit</span>
           </Nav.Link>
         </Nav>

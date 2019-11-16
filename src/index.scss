@@ -18,12 +18,20 @@
 }
 
 .hero-text {
-  width: 75%;
+  width: 60%;
+}
+
+.hero-text h1 {
+  font-size: 3rem !important;
 }
 
 @media (max-width: 992px) {
   .hero-text h1 {
     font-size: 2rem !important;
+  }
+
+  .hero-text {
+    width: 75%;
   }
 
   .hero-text h3 {

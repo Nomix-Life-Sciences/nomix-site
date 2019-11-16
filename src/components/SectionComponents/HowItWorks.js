@@ -7,7 +7,7 @@ import "./index.scss";
 const HowItWorks = ({ items }) => {
   return (
     <Flex
-      className="homeSection howitworks"
+      className="howitworks"
       alignItems="center"
       flexWrap="wrap"
       frameBorder

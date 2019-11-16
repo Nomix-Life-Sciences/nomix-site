@@ -3,7 +3,8 @@ import Button from "react-bootstrap/Button";
 import { Flex, Box } from "@rebass/grid/emotion";
 import WhoWeAre from "./components/SectionComponents/WhoWeAre";
 import HowItWorks from "./components/SectionComponents/HowItWorks";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Product from "./Product";
 import Partners from "./components/Partners/Partners";
 
 import Header from "./components/Header/Header";
@@ -71,13 +72,13 @@ function App() {
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box className="hero-text">
           <h1 className="main-header-text">
-            Find the clinical trial that works for you
+            Find the clinical trial that <br /> works for you
           </h1>
 
           <h3>
-            Were here to help you and doctor find the right clinical trial. Take
-            our kit and answer a few short questions and we’ll search the global
-            network for the right trial for you.
+            We're here to help you find the right clinical trial. Take our kit
+            and answer a few short questions and we'll search the global network
+            for a clinical trial for you.
           </h3>
         </Box>
       </Flex>
