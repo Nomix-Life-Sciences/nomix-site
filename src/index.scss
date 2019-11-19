@@ -7,6 +7,7 @@
 
 * {
   font-family: Proxima;
+  widows: 2;
 }
 
 .hero {
@@ -14,7 +15,7 @@
   background-color: $navy-blue;
   text-align: center;
   color: $light-text;
-  margin-top: 10vh;
+  margin-top: 100px;
 }
 
 .hero-text {
@@ -103,7 +104,7 @@
 }
 
 .partnerImage {
-  max-width: 85%;
+  max-width: 100%;
   padding: 50px;
 }
 

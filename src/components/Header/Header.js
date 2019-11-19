@@ -32,25 +32,27 @@ const Header = () => {
   });
   return (
     <Navbar collapseOnSelect bg="light" expand="lg" fixed="top">
-      <Navbar.Brand href="/">
-        <img className="logo-image" alt="logo" src={Logo} />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto"></Nav>
-        <Nav>
-          <Nav.Link
-            className="main-nav-link hovernav"
-            href="https://match.nomixls.com/login"
-          >
-            <span>Sign-in</span>
-          </Nav.Link>
-          <Nav.Link className="main-nav-link hovernav"></Nav.Link>
-          <Nav.Link className="nav-order-button hover-button" href="/order">
-            <span>Order Kit</span>
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+      <Container>
+        <Navbar.Brand href="/">
+          <img className="logo-image" alt="logo" src={Logo} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto"></Nav>
+          <Nav>
+            <Nav.Link
+              className="main-nav-link hovernav"
+              href="https://match.nomixls.com/login"
+            >
+              <span>Sign-in</span>
+            </Nav.Link>
+            <Nav.Link className="main-nav-link hovernav"></Nav.Link>
+            <Nav.Link className="nav-order-button hover-button" href="/order">
+              <span>Order Kit</span>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };

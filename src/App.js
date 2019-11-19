@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 import { Flex, Box } from "@rebass/grid/emotion";
 import WhoWeAre from "./components/SectionComponents/WhoWeAre";
 import HowItWorks from "./components/SectionComponents/HowItWorks";
@@ -71,15 +72,17 @@ function App() {
       <Header />
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box className="hero-text">
-          <h1 className="main-header-text">
-            Find the clinical trial that <br /> works for you
-          </h1>
+          <Container>
+            <h1 className="main-header-text">
+              Find the clinical trial that <br /> works for you
+            </h1>
 
-          <h3>
-            We're here to help you find the right clinical trial. Take our kit
-            and answer a few short questions and we'll search the global network
-            for a clinical trial for you.
-          </h3>
+            <h3>
+              We're here to help you find the right clinical trial. Take our kit
+              and answer a few short questions and we'll search the global
+              network for a clinical trial for you.
+            </h3>
+          </Container>
         </Box>
       </Flex>
       <Flex
