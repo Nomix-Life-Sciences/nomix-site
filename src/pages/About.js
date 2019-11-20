@@ -38,7 +38,7 @@ const aboutQuery = gql`
 export default class About extends Component {
   render() {
     return (
-      <Query query={aboutQuery}>
+      <Query query={aboutQuery} className="about-page">
         {({ loading, error, data }) => {
           if (loading) return "";
           if (error) return `Error! ${error.message}`;
