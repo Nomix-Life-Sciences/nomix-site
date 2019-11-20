@@ -10,6 +10,7 @@ import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Product from "../src/Product";
+import About from "../src/pages/About";
 
 const cache = new InMemoryCache();
 
@@ -44,6 +45,9 @@ ReactDOM.render(
         </Route>
         <Route exact path="/order">
           <Product />
+        </Route>
+        <Route exact path="/about">
+          <About />
         </Route>
       </Switch>
     </Router>
