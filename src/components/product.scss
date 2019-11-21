@@ -1,0 +1,11 @@
+@import "../colors.scss";
+
+img {
+  max-width: 100%;
+}
+
+.orderbutton {
+  background-color: $orange;
+  border: none !important;
+  border-radius: 5px;
+}

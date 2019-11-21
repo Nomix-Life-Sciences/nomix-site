@@ -65,7 +65,10 @@ export default class About extends Component {
                     ))}
                   </Box>
                   <Box width={[1, 1 / 2]}>
-                      <img className="about-image" src={getImageUrl(data.getAboutPage.aboutImage.path)} />
+                    <img
+                      className="about-image"
+                      src={getImageUrl(data.getAboutPage.aboutImage.path)}
+                    />
                   </Box>
                 </Flex>
 

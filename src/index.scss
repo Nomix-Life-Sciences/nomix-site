@@ -5,8 +5,11 @@
   src: url("./fonts/proxima_ssv/ProximaNova-Regular.otf") format("opentype");
 }
 
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 * {
-  font-family: Proxima;
+  font-family: "Proxima", sans-serif;
   widows: 2;
 }
 
@@ -46,8 +49,8 @@
   .orderKit button {
     background-color: $orange !important;
     border: none !important;
-    width: 75% !important;
     border-radius: 5px;
+    width: 75% !important;
   }
 }
 
