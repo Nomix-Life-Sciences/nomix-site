@@ -69,7 +69,7 @@ export default class About extends Component {
                   </Box>
                 </Flex>
 
-                <h1 className="sectionHeader">
+                <h1 className="sectionHeader about-header">
                   <span>FAQ</span>
                 </h1>
 
