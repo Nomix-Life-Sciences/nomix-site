@@ -46,7 +46,7 @@ export default class About extends Component {
             <>
               <Header />
               <div className="about-content container">
-                <h1 className="sectionHeader">
+                <h1 className="about-header sectionHeader">
                   <span>About Us</span>
                 </h1>
 
@@ -59,7 +59,7 @@ export default class About extends Component {
                   <Box width={[1, 1 / 2]}>
                     {data.getAboutPage.about.map(about => (
                       <div className="about-sub">
-                        <h3>{about.aboutTitle}</h3>
+                        <h3 className="about-header">{about.aboutTitle}</h3>
                         <p>{about.aboutDescription}</p>
                       </div>
                     ))}
@@ -83,7 +83,7 @@ export default class About extends Component {
                     <Box width={[1, 1 / 2]}>
                       {" "}
                       <div className="faq-sub">
-                        <h3>{faq.faq}</h3>
+                        <h3 className="about-header">{faq.faq}</h3>
                         <p>{faq.faqDescription}</p>
                       </div>
                     </Box>

@@ -40,6 +40,9 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
+            <Nav.Link className="main-nav-link hovernav" href="/about">
+              <span>About Us</span>
+            </Nav.Link>
             <Nav.Link
               className="main-nav-link hovernav"
               href="https://match.nomixls.com/login"
