@@ -13,6 +13,7 @@
 
 .howImage {
   max-width: 75%;
+  float: left;
 }
 
 .wwa-card {
@@ -31,4 +32,14 @@
 
 .wwa-header {
   color: $orange;
+}
+
+.step-title {
+  text-align: left;
+}
+
+.step-desc {
+  text-align: left;
+  color: gray;
+
 }
