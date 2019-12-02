@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 import * as compose from "lodash.flowright";
 import "./app.css";
 
+import "./shop.scss";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -126,7 +128,7 @@ class Shop extends Component {
     return (
       <>
         <Header />
-        <div className="App">
+        <div className="App shop-page">
           <header className="App__header">
             {!this.state.isCartOpen && (
               <div className="App__view-cart-wrapper">
@@ -141,7 +143,9 @@ class Shop extends Component {
           </header>
           <div className="Product-wrapper">
             <Container>
-              <h1 className="about-header sectionHeader">Order Kit</h1>
+              <h1 className="about-header sectionHeader order-kit-headline">
+                <span>Order Kit</span>
+              </h1>
 
               {this.props.data.shop.products.edges.map(product => (
                 <Product
@@ -162,7 +166,8 @@ class Shop extends Component {
             customerAccessToken={this.state.customerAccessToken}
           />
         </div>
-        <Footer />
+
+        <Footer className="order-footer" />
       </>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import VariantSelector from "./VariantSelector";
+import { Flex, Box } from "@rebass/grid/emotion";
 
 import "./product.scss";
 
@@ -78,31 +79,38 @@ class Product extends Component {
     });
     return (
       <div className="Product">
-        {this.props.product.images.edges.length ? (
-          <img
-            src={variantImage}
-            alt={`${this.props.product.title} product shot`}
-          />
-        ) : null}
-        <h5 className="Product__title">{this.props.product.title}</h5>
-        <span className="Product__price">${variant.price}</span>
-        <label className="Product__option">
-          Quantity
-          <input
-            min="1"
-            type="number"
-            defaultValue={variantQuantity}
-            onChange={this.handleQuantityChange}
-          ></input>
-        </label>
-        <button
-          className="orderbutton"
-          onClick={() =>
-            this.props.addVariantToCart(variant.id, variantQuantity)
-          }
+        <Flex
+          className="product-card"
+          flexWrap="wrap-reverse"
+          alignItems="center"
         >
-          <span> Add to Cart</span>
-        </button>
+          <Box width={[1, 1 / 2]} px={2}>
+            <h5 className="Product__title">{this.props.product.title}</h5>
+            <span className="Product__price">${variant.price}</span>
+            <label className="Product__option">
+              Quantity
+              <input
+                min="1"
+                type="number"
+                defaultValue={variantQuantity}
+                onChange={this.handleQuantityChange}
+              ></input>
+            </label>
+            <button
+              className="orderbutton"
+              onClick={() =>
+                this.props.addVariantToCart(variant.id, variantQuantity)
+              }
+            >
+              <span> Add to Cart</span>
+            </button>
+          </Box>
+          <Box width={[1, 1 / 2]} px={2}>
+            {this.props.product.images.edges.length ? (
+              <img src={variantImage} alt={`${this.props.product.title}`} />
+            ) : null}
+          </Box>
+        </Flex>
       </div>
     );
   }

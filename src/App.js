@@ -24,6 +24,7 @@ const howItWorksQuery = gql`
           path
         }
         title
+        description
       }
     }
   }
