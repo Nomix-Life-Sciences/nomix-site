@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+.order-kit-headline {
+  font-weight: bold;
+}
+
+.order-kit-headline span {
+  border-bottom: solid 5px $orange;
+}
+
+.order-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
