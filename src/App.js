@@ -71,6 +71,8 @@ function App() {
   return (
     <>
       <Header />
+      <div className="network-image">
+
       <Flex className="hero" justifyContent="center" alignItems="center">
         <Box className="hero-text">
           <Container>
@@ -79,13 +81,14 @@ function App() {
             </h1>
 
             <h3>
-              We're here to help you find the right clinical trial. Take our kit
-              and answer a few short questions and we'll search the global
-              network for a clinical trial for you.
+              You are unique so your treatment should be unique too. Nomix looks at your biomarkers and health history to match you to a clinical trial.
             </h3>
           </Container>
         </Box>
       </Flex>
+
+      </div>
+
       <Flex
         className="container homeSection"
         justifyContent="center"

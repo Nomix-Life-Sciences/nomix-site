@@ -15,10 +15,19 @@
 
 .hero {
   height: 50vh;
-  background-color: $navy-blue;
+  //background-color: $navy-blue;
   text-align: left;
-  color: $light-text;
+  color: $navy-blue;
   margin-top: 100px;
+
+
+}
+
+.network-image {
+  background-image: url("./images/nomix-bg1-01-01.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-attachment: fixed;
 }
 
 .hero-text {
@@ -54,6 +63,10 @@
   }
 }
 
+h3 {
+  color: $navy-blue;
+}
+
 .main-header-text {
   font-weight: bolder;
 }
@@ -85,6 +98,7 @@
 .sectionHeader span {
   border-bottom: solid 5px $orange;
   font-weight: bold;
+  color: $navy-blue;
 }
 
 .orderKit {
