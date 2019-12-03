@@ -20,12 +20,12 @@ import About from "../src/pages/About";
 import { ApolloProvider } from "react-apollo";
 
 const httpLink = createHttpLink({
-  uri: "https://nomix-development.myshopify.com/api/graphql"
+  uri: "https://nomixlifesciences.myshopify.com/api/graphql"
 });
 
 const middlewareLink = setContext(() => ({
   headers: {
-    "X-Shopify-Storefront-Access-Token": "11611c8d5302c5bb5bdca8bba5a8551d"
+    "X-Shopify-Storefront-Access-Token": "5724938aa62ad4772b6ac1dd21d9ffce"
   }
 }));
 
@@ -42,9 +42,9 @@ const link1 = new HttpLink({
 });
 
 const link2 = new HttpLink({
-  uri: "https://nomix-development.myshopify.com/api/graphql",
+  uri: "https://nomixlifesciences.myshopify.com/api/graphql",
   headers: {
-    "X-Shopify-Storefront-Access-Token": "11611c8d5302c5bb5bdca8bba5a8551d"
+    "X-Shopify-Storefront-Access-Token": "5724938aa62ad4772b6ac1dd21d9ffce"
   }
 });
 

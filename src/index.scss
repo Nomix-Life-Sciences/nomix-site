@@ -24,14 +24,13 @@
 }
 
 .network-image {
-  background-image: url("./images/nomix-bg1-01-01.png");
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  background-attachment: fixed;
+  background-image: url("./images/network-banner-gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .hero-text {
-  width: 60%;
 }
 
 .hero-text h1 {
@@ -48,7 +47,6 @@
   }
 
   .hero-text {
-    width: 75%;
   }
 
   .hero-text h3 {
