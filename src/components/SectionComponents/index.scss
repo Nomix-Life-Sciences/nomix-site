@@ -13,9 +13,14 @@
 
 .howImage {
   max-width: 75%;
-  float: left;
 }
 
+@media (min-width: 992px) {
+  .howImage {
+    max-width: 75%;
+    float: left;
+  }
+}
 .wwa-card {
   border: none !important;
   background: none !important;
@@ -41,5 +46,4 @@
 .step-desc {
   text-align: left;
   color: gray;
-
 }
