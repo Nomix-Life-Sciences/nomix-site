@@ -104,16 +104,18 @@ h3 {
   margin-bottom: 5vh;
 }
 
-.orderKit button {
+.order-kit-cta-large {
   background-color: $orange !important;
   border: none !important;
   font-size: 32px;
   width: 50%;
   border-radius: 5px;
+  color: #ffffff;
 }
 
+
 @media (min-width: 992px) {
-  .orderKit button {
+  .order-kit-cta-large {
     background-color: $orange !important;
     border: none !important;
     font-size: 32px;

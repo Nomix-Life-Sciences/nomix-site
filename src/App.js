@@ -72,23 +72,22 @@ function App() {
     <>
       <Header />
       <div className="network-image">
+        <Flex className="hero" justifyContent="center" alignItems="center">
+          <Box className="hero-text">
+            <Container>
+              <h1 className="main-header-text">
+                Find the clinical trial that <br /> works for you
+              </h1>
 
-      <Flex className="hero" justifyContent="center" alignItems="center">
-        <Box className="hero-text">
-          <Container>
-            <h1 className="main-header-text">
-              Find the clinical trial that <br /> works for you
-            </h1>
-
-            <h3>
-              You are unique so your treatment should be unique too. Nomix looks at your biomarkers and health history to match you to a clinical trial.
-            </h3>
-          </Container>
-        </Box>
-      </Flex>
-
+              <h3>
+                You are unique so your treatment should be unique too. Nomix
+                looks at your biomarkers and health history to match you to a
+                clinical trial.
+              </h3>
+            </Container>
+          </Box>
+        </Flex>
       </div>
-
       <Flex
         className="container homeSection"
         justifyContent="center"
@@ -134,8 +133,9 @@ function App() {
 
             <br />
             <br />
-            <Button className="orderKit hover-button">
-              <span>Order Kit</span>
+
+            <Button href="/order" className="order-kit-cta-large">
+                <span>Order Kit</span>
             </Button>
           </Box>
         </Flex>
