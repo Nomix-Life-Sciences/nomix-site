@@ -4,9 +4,9 @@ import Cart from "./components/Cart";
 import CustomerAuthWithMutation from "./components/CustomerAuth";
 import PropTypes from "prop-types";
 import * as compose from "lodash.flowright";
-import "./app.css";
-
 import "./shop.scss";
+
+import "./cart.scss";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
