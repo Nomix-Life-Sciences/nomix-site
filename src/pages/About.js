@@ -48,7 +48,7 @@ export default class About extends Component {
               <div className="about-content container">
                 <div className="header-name">
                 <h1 className="about-header sectionHeader">
-                  <span>About Us</span>
+                  <span >About Us</span>
                 </h1>
                 </div>
 
@@ -94,7 +94,7 @@ export default class About extends Component {
                       <div className="faq-sub">
                         <h2 className="about-header">{faq.faq}</h2>
                         <div className="faqText">
-                        <Flex className="blah" justifyContent="top" alignItems="flex-start">
+                        <Flex className="description" justifyContent="top" alignItems="flex-start">
                         <p>{faq.faqDescription}</p>
                         </Flex>
                       </div>
@@ -103,9 +103,9 @@ export default class About extends Component {
                   ))}
                 </Flex>
                 <div className="contact-number">
-                <p><mark class="blue">Got any more questions?</mark>
+                <p><mark class="blue">Still have more questions?</mark>
                 <mark class="gray">Contact support at</mark> 
-                <mark class="blue-light">1234567890</mark></p>
+                <mark class="blue">1234567890</mark></p>
                 </div>
                 </div>
               <Footer />
