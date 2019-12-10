@@ -15,3 +15,7 @@ When you make changes, the site will live-update.
 ## Editing content
 
 Most of the site's content is stored in the [Takeshape headless CMS](http://takeshape.io) with e-commerce information stored in Shopify. Data is being queried using the [Shopify Storefront API](https://help.shopify.com/en/api/storefront-api). Both the Shopify and Takeshape data is being queried using the [Apollo GraphQL Router](https://www.apollographql.com/).
+
+## Environment variables
+
+There are two environment varibles, `REACT_APP_SHOPIFY_STOREFRONT` and `REACT_APP_TAKESHAPE_API`. To run the app, you must have a `.env` file in the root directory of the app containing the values of these variables.
