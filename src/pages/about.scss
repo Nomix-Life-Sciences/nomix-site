@@ -1,23 +1,80 @@
 @import "../colors.scss";
 
+@font-face {
+  font-family: "Proxima";
+  src: url("../fonts/proxima_ssv/ProximaNova-Regular.otf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  widows: 2;
+}
+
 .about-content {
   margin-top: 150px;
 }
 
 .about-sub {
-  padding: 15px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.header-name {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .faq-sub {
   padding: 15px;
 }
 
-
-
 .about-header{
   color: $navy-blue;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .about-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 50%;
+}
+
+.FAQ-title {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  font-weight: 800px;
+}
+
+.contact-number {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+mark.blue {
+  color: #144a61;
+  background: none;
+}
+
+mark.gray {
+  color: #A0A0A0;
+  background: none;
+}
+
+.faqText {
+  padding-top: 15px;
+  font-size: 20px;
+  color: #6F6F6F;
+}
+
+.aboutDescription {
+  font-weight: 700px;
+  font-size: 22px;
+  color: #6F6F6F;
 }

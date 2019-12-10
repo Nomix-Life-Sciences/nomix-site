@@ -46,9 +46,11 @@ export default class About extends Component {
             <>
               <Header />
               <div className="about-content container">
+                <div className="header-name">
                 <h1 className="about-header sectionHeader">
-                  <span>About Us</span>
+                  <span >About Us</span>
                 </h1>
+                </div>
 
                 <Flex
                   alignItems="center"
@@ -60,7 +62,9 @@ export default class About extends Component {
                     {data.getAboutPage.about.map(about => (
                       <div className="about-sub">
                         <h3 className="about-header">{about.aboutTitle}</h3>
+                        <div className="aboutDescription">
                         <p>{about.aboutDescription}</p>
+                        </div>
                       </div>
                     ))}
                   </Box>
@@ -72,27 +76,38 @@ export default class About extends Component {
                   </Box>
                 </Flex>
 
-                <h1 className="sectionHeader about-header">
-                  <span>FAQ</span>
-                </h1>
+                <div className="FAQ-title">
+                  <h1 className="sectionHeader about-header">
+                    <span>FAQ</span>
+                  </h1>
+                </div>
 
                 <Flex
-                  alignItems="center"
+                  alignItems="flex-start"
                   flexWrap="wrap"
                   justifyContent="center"
                   frameBorder
                 >
                   {data.getAboutPage.faq.map(faq => (
-                    <Box width={[1, 1 / 2]}>
+                    <Box my={0} width={[1, 1 / 2]}>
                       {" "}
                       <div className="faq-sub">
-                        <h3 className="about-header">{faq.faq}</h3>
+                        <h2 className="about-header">{faq.faq}</h2>
+                        <div className="faqText">
+                        <Flex className="description" justifyContent="top" alignItems="flex-start">
                         <p>{faq.faqDescription}</p>
+                        </Flex>
+                      </div>
                       </div>
                     </Box>
                   ))}
                 </Flex>
-              </div>
+                <div className="contact-number">
+                <p><mark class="blue">Still have more questions?</mark>
+                <mark class="gray">Contact support at</mark> 
+                <mark class="blue">1234567890</mark></p>
+                </div>
+                </div>
               <Footer />
             </>
           );
