@@ -70,3 +70,12 @@
     visibility: hidden;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .hiw-card {
+    margin-left: 20px;
+  }
+  .howitworks {
+    margin-top: 50px;
+  }
+}
