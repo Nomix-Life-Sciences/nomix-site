@@ -6,6 +6,23 @@
   margin-bottom: 10vh;
 }
 
+.step-number {
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+
+  -moz-border-radius: 30px; /* or 50% */
+  border-radius: 30px; /* or 50% */
+
+  background-color: $orange;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  float: right;
+  
+}
+
 .wwa-text {
   text-align: center;
   color: $light-text;
@@ -15,6 +32,12 @@
   max-width: 75%;
 }
 
+@media (min-width: 992px) {
+  .howImage {
+    max-width: 75%;
+    float: left;
+  }
+}
 .wwa-card {
   border: none !important;
   background: none !important;
@@ -31,4 +54,13 @@
 
 .wwa-header {
   color: $orange;
+}
+
+.step-title {
+  text-align: left;
+}
+
+.step-desc {
+  text-align: left;
+  color: gray;
 }

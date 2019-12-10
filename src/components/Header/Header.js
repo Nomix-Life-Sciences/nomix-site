@@ -11,25 +11,6 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Header = () => {
-  const [initialized, setInitialized] = useState(false);
-  // TODO: this is setting all of them every time it loads. It would be smart to
-  // set it to just adjust this one.
-  useEffect(() => {
-    if (!initialized) {
-      const x = document.getElementsByClassName("hover-button");
-      let i;
-      for (i = 0; i < x.length; i++) {
-        x[i].onmousemove = e => {
-          const x = e.pageX - e.target.offsetLeft;
-          const y = e.pageY - e.target.offsetTop;
-
-          e.target.style.setProperty("--x", `${x}px`);
-          e.target.style.setProperty("--y", `${y}px`);
-        };
-      }
-      setInitialized(true);
-    }
-  });
   return (
     <Navbar collapseOnSelect bg="light" expand="lg" fixed="top">
       <Container>
@@ -40,15 +21,18 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
+            <Nav.Link className="main-nav-link hovernav" href="/about">
+              <span>ABOUT US</span>
+            </Nav.Link>
             <Nav.Link
               className="main-nav-link hovernav"
               href="https://match.nomixls.com/login"
             >
-              <span>Sign-in</span>
+              <span>SIGN-IN</span>
             </Nav.Link>
             <Nav.Link className="main-nav-link hovernav"></Nav.Link>
             <Nav.Link className="nav-order-button hover-button" href="/order">
-              <span>Order Kit</span>
+              <span>ORDER KIT</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,0 +1,21 @@
+@import "../colors.scss";
+
+img {
+  max-width: 100%;
+}
+
+.orderbutton {
+  background-color: $orange;
+  border: none !important;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.product-card {
+  background-color: #f1f1f1;
+  padding: 10%;
+}
+
+.Product {
+  padding: 10%;
+}
