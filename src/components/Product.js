@@ -94,6 +94,7 @@ class Product extends Component {
                 type="number"
                 defaultValue={variantQuantity}
                 onChange={this.handleQuantityChange}
+                className="Product__input"
               ></input>
             </label>
             <button
