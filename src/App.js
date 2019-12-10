@@ -76,7 +76,7 @@ function App() {
           <Box className="hero-text">
             <Container>
               <h1 className="main-header-text">
-                Find the clinical trial that <br /> works for you
+                Find the clinical trial that works for you
               </h1>
 
               <h3>
@@ -135,7 +135,7 @@ function App() {
             <br />
 
             <Button href="/order" className="order-kit-cta-large">
-                <span>Order Kit</span>
+              <span>Order Kit</span>
             </Button>
           </Box>
         </Flex>
