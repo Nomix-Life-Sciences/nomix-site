@@ -7,6 +7,7 @@ import { setContext } from "apollo-link-context";
 
 import * as serviceWorker from "./serviceWorker";
 
+import dotenv from "dotenv";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { InMemoryCache } from "apollo-cache-inmemory";
@@ -19,13 +20,16 @@ import About from "../src/pages/About";
 
 import { ApolloProvider } from "react-apollo";
 
+dotenv.config();
+
 const httpLink = createHttpLink({
   uri: "https://nomixlifesciences.myshopify.com/api/graphql"
 });
 
 const middlewareLink = setContext(() => ({
   headers: {
-    "X-Shopify-Storefront-Access-Token": "5724938aa62ad4772b6ac1dd21d9ffce"
+    "X-Shopify-Storefront-Access-Token":
+      process.env.REACT_APP_SHOPIFY_STOREFRONT
   }
 }));
 
@@ -37,14 +41,15 @@ const TAKESHAPE_BASE_URL =
 const link1 = new HttpLink({
   uri: TAKESHAPE_BASE_URL,
   headers: {
-    authorization: `Bearer 833c58badcfa45b9a5deaf7066be1a41`
+    authorization: `Bearer ${process.env.REACT_APP_TAKESHAPE_API}`
   }
 });
 
 const link2 = new HttpLink({
   uri: "https://nomixlifesciences.myshopify.com/api/graphql",
   headers: {
-    "X-Shopify-Storefront-Access-Token": "5724938aa62ad4772b6ac1dd21d9ffce"
+    "X-Shopify-Storefront-Access-Token":
+      process.env.REACT_APP_SHOPIFY_STOREFRONT
   }
 });
 
