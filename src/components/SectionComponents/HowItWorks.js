@@ -54,7 +54,7 @@ const HowItWorks = ({ items }) => {
             </div>
           </div>
         </Box>
-        <Box width={[1, 1 / 3 ]}>
+        <Box width={[1, 1 / 3]}>
           <div className="hiw-card card">
             <div class="card-body">
               <img
@@ -72,7 +72,7 @@ const HowItWorks = ({ items }) => {
         flexWrap="wrap"
         frameBorder
       >
-                <Box width={[1, 1 / 12]} px={2}>
+        <Box width={[1, 1 / 12]} px={2}>
           <h1 className="step-number">3</h1>
         </Box>
         <Box width={[1, 1 / 3]} px={2}>
@@ -101,7 +101,7 @@ const HowItWorks = ({ items }) => {
         flexWrap="wrap-reverse"
         frameBorder
       >
-                        <Box width={[1, 1 / 12]} px={2}>
+        <Box width={[1, 1 / 12]} px={2}>
           <h1 className="step-number">4</h1>
         </Box>
         <Box width={[1, 1 / 2]} px={2}>

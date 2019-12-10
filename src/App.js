@@ -72,17 +72,17 @@ function App() {
     <>
       <Header />
       <div className="network-image">
-        <Flex className="hero" justifyContent="center" alignItems="center">
+        <Flex className="hero container" alignItems="center">
           <Box className="hero-text">
             <Container>
               <h1 className="main-header-text">
                 Find the clinical trial that works for you
               </h1>
-
+              <br />
+              <h3>You are unique. Your treatment should be unique too.</h3>
               <h3>
-                You are unique so your treatment should be unique too. Nomix
-                looks at your biomarkers and health history to match you to a
-                clinical trial.
+                Nomix looks at your biomarkers and health history to match you
+                to a clinical trial.
               </h3>
             </Container>
           </Box>
@@ -124,7 +124,7 @@ function App() {
         </Flex>
       </div>
       <div className="orderKit">
-        <Flex className="container" justifyContent="center" alignItems="center">
+        <Flex className="" justifyContent="center">
           <Box>
             <p className="orderText">
               Nomix makes finding the right trial easy. Start by ordering our
