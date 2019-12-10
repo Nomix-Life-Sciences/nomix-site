@@ -72,7 +72,7 @@ function App() {
     <>
       <Header />
       <div className="network-image">
-        <Flex className="hero container" alignItems="center">
+        <Flex className="hero" alignItems="center">
           <Box className="hero-text">
             <Container>
               <h1 className="main-header-text">
