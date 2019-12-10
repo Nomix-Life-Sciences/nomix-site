@@ -135,7 +135,7 @@ function App() {
             <br />
 
             <Button href="/order" className="order-kit-cta-large">
-              <span>Order Kit</span>
+              <span>ORDER KIT</span>
             </Button>
           </Box>
         </Flex>
